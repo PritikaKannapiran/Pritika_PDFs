@@ -66,11 +66,11 @@ def main():
 	if "chat_history" not in st.session_state:
 		st.session_state.chat_history = None
 	
-	st.header("Chat with multiple PDFs :books:")
+	st.header("🦜️🔗 Chat with multiple PDFs")
 	user_question = st.text_input("Ask a question about your documents:")
 	if user_question:
 		handle_userinput(user_question)
-	
+	st.write("Made with :heart: by Pritika")
 # 	st.write(user_template.replace("{{MSG}}", "Hello robot"), unsafe_allow_html=True)
 # 	st.write(bot_template.replace("{{MSG}}", "Hello Pritika!"), unsafe_allow_html=True)
 	
